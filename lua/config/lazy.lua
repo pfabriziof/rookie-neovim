@@ -24,11 +24,9 @@ require("lazy").setup({
 
     install = {
         missing = true,
-        colorscheme = { "tokyonight_day" }
+        -- colorscheme = { "tokyonight_day" }
     },
 
     -- automatically check for plugin updates
     checker = { enabled = true },
 })
-
-
