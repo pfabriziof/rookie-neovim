@@ -3,12 +3,12 @@ require("config.keymaps")
 require("config.autocmds")
 require("config.lazy")
 
-vim.cmd[[colorscheme tokyonight]]
+vim.cmd[[colorscheme flexoki]]
 
 -- Enable LSP plugins
 vim.lsp.enable({
     "lua_ls",
-    "pylsp",
+    "basedpyright",
     "ruff",
     "eslint",
 })
