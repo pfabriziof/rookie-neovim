@@ -8,8 +8,9 @@ vim.cmd[[colorscheme flexoki]]
 -- Enable LSP plugins
 vim.lsp.enable({
     "lua_ls",
-    "basedpyright",
-    "ruff",
     "eslint",
-    "terraform",
+    "rust_analyzer",
+    "terraformls",
+    "ruff",
+    "basedpyright",
 })
