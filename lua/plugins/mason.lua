@@ -12,6 +12,7 @@ return {
         opts = {
             ensure_installed = {
                 "lua_ls",
+                "bashls",
                 "eslint",
                 "rust_analyzer",
                 "terraformls",
