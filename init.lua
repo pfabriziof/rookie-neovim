@@ -11,4 +11,5 @@ vim.lsp.enable({
     "basedpyright",
     "ruff",
     "eslint",
+    "terraform",
 })
