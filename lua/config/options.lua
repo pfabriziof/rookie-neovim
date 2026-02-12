@@ -12,6 +12,9 @@ opt.smartcase = true        -- ...until you type a Capital Letter, then it becom
 opt.tabstop = 4             -- Number of visual spaces a <Tab> character represents
 opt.shiftwidth = 4          -- Number of spaces used for each level of (re)indentation
 opt.expandtab = true        -- Convert all <Tab> presses into actual space characters
+opt.foldenable = false
+opt.foldlevel = 99
+
 opt.background = "light"
 
 vim.cmd([[let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro']])
