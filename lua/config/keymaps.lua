@@ -4,11 +4,11 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- Filesystem explore
--- vim.keymap.set("n", "<leader>e", ":Explore<CR>", { desc = 'Explore files with Netrw', noremap = true, silent = true })
-vim.keymap.set("n", "<leader>e", ":Oil<CR>", { desc = 'Explore files with Oil' })
+-- vim.keymap.set("n", "<leader>e", "<cmd>Explore<CR>", { desc = 'Explore files with Netrw', noremap = true, silent = true })
+vim.keymap.set("n", "<leader>e", "<cmd>Oil<CR>", { desc = 'Explore files with Oil' })
 
 -- Working with files
-vim.keymap.set({"n", "i", "v", "s"}, "<C-s>", ":w<CR>", {
+vim.keymap.set({"n", "i", "v", "s"}, "<C-s>", "<cmd>w<CR>", {
     noremap = true,
     silent = true,
     desc = "Save"
@@ -24,8 +24,8 @@ vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 vim.keymap.set("n", "ge", vim.diagnostic.open_float, { desc = 'Open diagnostic list' })
 vim.keymap.set("n", "ca", vim.lsp.buf.code_action, { desc = 'Diagnostic code action' })
 -- vim.keymap.set("n", "<leader>q", vim.diagnostic.setqflist, { desc = "Open diagnostic Quickfix list" })
--- vim.keymap.set("n", "[q", ":cprev<CR>", { desc = "Previous Quickfix item" })
--- vim.keymap.set("n", "]q", ":cnext<CR>", { desc = "Next Quickfix item" })
+-- vim.keymap.set("n", "[q", "<cmd>cprev<CR>", { desc = "Previous Quickfix item" })
+-- vim.keymap.set("n", "]q", "<cmd>cnext<CR>", { desc = "Next Quickfix item" })
 
 -- Definition of variables
 vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { desc = "LSP Definition" })

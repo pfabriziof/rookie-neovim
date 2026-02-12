@@ -15,4 +15,5 @@ vim.lsp.enable({
     "ruff",
     "basedpyright",
     "gdscript",
+    "texlab",
 })
