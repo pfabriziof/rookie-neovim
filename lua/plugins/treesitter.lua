@@ -16,6 +16,7 @@ return {
             "gdshader",
             "godot_resource",
             "terraform",
+            "latex",
             -- Add more languages as needed
         }
         treesitter.setup({

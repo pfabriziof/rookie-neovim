@@ -18,6 +18,7 @@ return {
                 "terraformls",
                 "ruff",
                 "basedpyright",
+                "texlab",
             }
         },
     }
