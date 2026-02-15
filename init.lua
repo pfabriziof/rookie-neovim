@@ -3,7 +3,7 @@ require("config.keymaps")
 require("config.autocmds")
 require("config.lazy")
 
-vim.cmd[[colorscheme flexoki]]
+vim.cmd[[colorscheme tokyonight]]
 
 -- Enable LSP plugins
 vim.lsp.enable({
