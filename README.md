@@ -106,6 +106,27 @@ git clone <your-repo-url> ~/.config/nvim
 nvim
 ```
 
+### Vimtex - How to enable Zathura inverse search?
+In Vimtex configuration I already included the option `vim.g.vimtex_view_zathura_options` to work on Wayland. Comment it and install xdotool if you're on X11.
+
+1. Create or edit the Zathura configuration file located at `~/.config/zathura/zathurarc`:
+
+```bash
+mkdir -p ~/.config/zathura
+nano ~/.config/zathura/zathurarc
+```
+
+2. At these instructions to the file:
+
+```
+set synctex true
+set selection-clipboard clipboard
+set dbus-service true
+set synctex-editor-command "nvim --remote-silent +%{line} %{input}"
+```
+
+3. Now, when you are looking at your PDF in Zathura, hold **Ctrl and Left-Click** on a sentence.
+
 ## Key Features
 
 - **LSP-powered development** for multiple languages
