@@ -4,16 +4,16 @@ A custom Neovim configuration focused on full-stack web development (JavaScript/
 
 ## System Requirements
 
-**OS:** Arch Linux  
+**OS:** Arch Linux
 **Neovim:** 0.11+
 
 ### Required Packages (Arch Linux)
 ```bash
 # Core dependencies
-sudo pacman -S neovim git gcc make ripgrep fd
+sudo pacman -S --needed neovim git gcc make ripgrep fd
 
 # LaTeX support
-sudo pacman -S texlive-basic texlive-latexrecommended texlive-fontsrecommended \
+sudo pacman -S --needed texlive-basic texlive-latexrecommended texlive-fontsrecommended \
                texlive-bin texlive-binextra texlive-latexextra texlive-mathscience \
                biber zathura zathura-pdf-mupdf
 
