@@ -4,7 +4,7 @@ A custom Neovim configuration focused on full-stack web development (JavaScript/
 
 ## System Requirements
 
-- **OS:** Arch Linux  
+- **OS:** Arch Linux
 - **Neovim:** 0.11+
 
 ### Required Packages (Arch Linux)
@@ -73,8 +73,8 @@ sudo pacman -S nodejs npm python python-pip rust
 - [**vimtex**](https://github.com/lervag/vimtex) - Comprehensive LaTeX support with Zathura PDF viewer
 
 ### Colorschemes
-- [**tokyonight.nvim**](https://github.com/folke/tokyonight.nvim) - Tokyo Night theme
-- [**flexoki**](https://github.com/kepano/flexoki-neovim) - Flexoki theme (active)
+- [**tokyonight.nvim**](https://github.com/folke/tokyonight.nvim) - Tokyo Night theme (active)
+- [**flexoki**](https://github.com/kepano/flexoki-neovim) - Flexoki theme
 
 ### Utilities
 - [**plenary.nvim**](https://github.com/nvim-lua/plenary.nvim) - Lua utility functions (dependency)
@@ -118,7 +118,7 @@ nano ~/.config/zathura/zathurarc
 
 2. At these instructions to the file:
 
-```
+```bash
 set synctex true
 set selection-clipboard clipboard
 set dbus-service true
