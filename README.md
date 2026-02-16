@@ -4,8 +4,8 @@ A custom Neovim configuration focused on full-stack web development (JavaScript/
 
 ## System Requirements
 
-**OS:** Arch Linux
-**Neovim:** 0.11+
+- **OS:** Arch Linux  
+- **Neovim:** 0.11+
 
 ### Required Packages (Arch Linux)
 ```bash
