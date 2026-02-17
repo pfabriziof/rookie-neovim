@@ -21,8 +21,8 @@ vim.keymap.set({"n", "i", "v", "s"}, "<C-a>", "ggVG", {
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
 -- Native Diagnostics
-vim.keymap.set("n", "ge", vim.diagnostic.open_float, { desc = 'Open diagnostic list' })
-vim.keymap.set("n", "ca", vim.lsp.buf.code_action, { desc = 'Diagnostic code action' })
+vim.keymap.set("n", "<leader>ge", vim.diagnostic.open_float, { desc = 'Open diagnostic list' })
+vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = 'Diagnostic code action' })
 -- vim.keymap.set("n", "<leader>q", vim.diagnostic.setqflist, { desc = "Open diagnostic Quickfix list" })
 -- vim.keymap.set("n", "[q", "<cmd>cprev<CR>", { desc = "Previous Quickfix item" })
 -- vim.keymap.set("n", "]q", "<cmd>cnext<CR>", { desc = "Next Quickfix item" })
