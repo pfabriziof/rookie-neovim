@@ -14,8 +14,11 @@ sudo pacman -S --needed neovim git gcc make ripgrep fd
 
 # LaTeX support
 sudo pacman -S --needed texlive-basic texlive-latexrecommended texlive-fontsrecommended \
-               texlive-bin texlive-binextra texlive-latexextra texlive-mathscience \
+               texlive-latexextra texlive-mathscience texlive-publishers texlive-bin texlive-binextra \
                biber zathura zathura-pdf-mupdf
+
+## After installing LaTex packages run the following command and restart your terminal
+sudo texhash
 
 # Optional: Language-specific tools
 sudo pacman -S nodejs npm python python-pip rust
