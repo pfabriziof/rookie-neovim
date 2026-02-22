@@ -13,7 +13,7 @@ vim.keymap.set({"n", "i", "v", "s"}, "<C-s>", "<cmd>w<CR>", {
     silent = true,
     desc = "Save"
 })
-vim.keymap.set({"n", "i", "v", "s"}, "<C-a>", "ggVG", {
+vim.keymap.set({"n", "i", "v", "s"}, "<C-a>", "<Esc>ggVG", {
     noremap = true,
     silent = true,
     desc="Select all"
