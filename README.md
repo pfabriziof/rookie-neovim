@@ -2,12 +2,11 @@
 
 A custom Neovim configuration focused on full-stack web development (JavaScript/TypeScript), Python development, LaTeX document editing, Godot game development, and infrastructure as code (Terraform). Features LSP support, advanced search capabilities, Git integration, and a modern UI.
 
-## System Requirements
+## Required Packages (Arch Linux)
+> [!IMPORTANT]
+> **Neovim 0.11** is mandatory since it introduced breaking changes to the way LSP and other plugins are used.
 
-- **OS:** Arch Linux
-- **Neovim:** 0.11+
-
-### Required Packages (Arch Linux)
+The following packages are required for this custom neovim editor to work.
 ```bash
 # Core dependencies
 sudo pacman -S --needed neovim git gcc make ripgrep fd
@@ -23,6 +22,22 @@ sudo texhash
 # Optional: Language-specific tools
 sudo pacman -S nodejs npm python python-pip rust
 ```
+
+If you're going to use any font that is outside from `texlive-fontsrecommended`, instead of installing a package
+like `texlive-fontsextra` you can use `tlmgr` to install fonts and reference them:
+
+```
+tlmgr init-usertree
+tlmr --usermode install fontawesome5
+
+# the latter command installs fontawesome5 in ~/texmf
+# check its existance using this command:
+
+kpsenwhich fontawesome5.sty
+```
+
+Now inside your .tex file you can import the font using `\usepackage{fontawesome5}`. Optionally use `:VimtexClean` advanced
+`:VimtexReload` to apply the latest changes.
 
 ## Plugin Manager
 
