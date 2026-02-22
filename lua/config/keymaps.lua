@@ -4,8 +4,8 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- Filesystem explore
--- vim.keymap.set("n", "<leader>e", "<cmd>Explore<CR>", { desc = 'Explore files with Netrw', noremap = true, silent = true })
 vim.keymap.set("n", "<leader>e", "<cmd>Oil<CR>", { desc = 'Explore files with Oil' })
+-- vim.keymap.set("n", "<leader>e", "<cmd>Explore<CR>", { desc = 'Explore files with Netrw', noremap = true, silent = true })
 
 -- Working with files
 vim.keymap.set({"n", "i", "v", "s"}, "<C-s>", "<cmd>w<CR>", {
