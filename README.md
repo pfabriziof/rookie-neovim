@@ -20,7 +20,7 @@ sudo pacman -S --needed texlive-basic texlive-latexrecommended texlive-fontsreco
 sudo texhash
 
 # Optional: Language-specific tools
-sudo pacman -S nodejs npm python python-pip rust
+sudo pacman -S --needed nodejs npm python python-pip rust
 ```
 
 If you're going to use any font that is outside from `texlive-fontsrecommended`, instead of installing a package
