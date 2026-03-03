@@ -5,6 +5,7 @@ return {
         dependencies = {
             'nvim-lua/plenary.nvim',
             { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
+            "nvim-telescope/telescope-live-grep-args.nvim",
         },
         config = function()
             local telescope = require('telescope')
@@ -21,10 +22,12 @@ return {
 
             -- Load fzf extension
             telescope.load_extension('fzf')
+            telescope.load_extension("live_grep_args")
 
             -- Plugin-recommended keymaps
             vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
-            vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
+            -- vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
+            vim.keymap.set("n", "<leader>fg", ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>", { desc = 'Telescope live grep args' })
             vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
             vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
         end,
@@ -53,11 +56,11 @@ return {
                 '<cmd>lua require("spectre").open_file_search({select_word=true})<CR>',
                 desc = "Search on current file"
             },
-            {
-                "<leader>sd",
-                '<cmd>lua require("spectre").open({cwd = vim.fn.expand("%:p:h")})<CR>',
-                desc = "Search in current directory"
-            },
+            -- {
+            --     "<leader>sd",
+            --     '<cmd>lua require("spectre").open({cwd = vim.fn.expand("%:p:h")})<CR>',
+            --     desc = "Search in current directory"
+            -- },
         },
     },
     {

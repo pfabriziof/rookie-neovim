@@ -26,14 +26,14 @@ sudo pacman -S --needed nodejs npm python python-pip rust
 If you're going to use any font that is outside from `texlive-fontsrecommended`, instead of installing a package
 like `texlive-fontsextra` you can use `tlmgr` to install fonts and reference them:
 
-```
+```bash
 tlmgr init-usertree
 tlmr --usermode install fontawesome5
 
 # the latter command installs fontawesome5 in ~/texmf
 # check its existance using this command:
 
-kpsenwhich fontawesome5.sty
+kpsewhich fontawesome5.sty
 ```
 
 Now inside your .tex file you can import the font using `\usepackage{fontawesome5}`. Optionally use `:VimtexClean` advanced
