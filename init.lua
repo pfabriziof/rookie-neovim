@@ -16,4 +16,5 @@ vim.lsp.enable({
     "basedpyright",
     "gdscript",
     "texlab",
+    "gopls",
 })
