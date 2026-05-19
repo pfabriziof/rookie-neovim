@@ -17,4 +17,5 @@ vim.lsp.enable({
     "gdscript",
     "texlab",
     "gopls",
+    "clangd",
 })

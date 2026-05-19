@@ -20,6 +20,7 @@ return {
                 "basedpyright",
                 "texlab",
                 "gopls",
+                "clangd",
             }
         },
     }
