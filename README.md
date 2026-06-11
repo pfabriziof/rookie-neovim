@@ -9,7 +9,7 @@ A custom Neovim configuration focused on full-stack web development (JavaScript/
 The following packages are required for this custom neovim editor to work.
 ```bash
 # Core dependencies
-sudo pacman -S --needed neovim git gcc make ripgrep fd
+sudo pacman -S --needed neovim git gcc make ripgrep fd tree-sitter-cli
 
 # LaTeX support
 sudo pacman -S --needed texlive-basic texlive-latexrecommended texlive-fontsrecommended \
