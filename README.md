@@ -28,7 +28,7 @@ like `texlive-fontsextra` you can use `tlmgr` to install fonts and reference the
 
 ```bash
 tlmgr init-usertree
-tlmr --usermode install fontawesome5
+tlmgr --usermode install fontawesome5
 
 # the latter command installs fontawesome5 in ~/texmf
 # check its existance using this command:
